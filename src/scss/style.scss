@@ -1,0 +1,28 @@
+@import './helpers/_fonts';
+@import './helpers/_mixins';
+@import './helpers/_helpers';
+@import './helpers/_colors';
+@import './helpers/_reset';
+
+@import './items/_nav';
+@import './items/_heroSection';
+@import './items/_logos';
+@import './items/_dashboard';
+@import './items/_for';
+@import './items/_prices';
+
+
+
+// @media screen and (max-width: 250px) {
+//     .container {
+//         width: 90%;
+//     }
+// }
+
+
+.container {
+    width: 100%;
+    max-width: 144rem;
+    margin: auto;
+    background-color: $blue;
+}

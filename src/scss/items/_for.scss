@@ -1,0 +1,92 @@
+.for-section {
+    width: 94%;
+    height: 100rem;
+    background-color: $white;
+    margin: auto;
+    @include centerer;
+
+    .for-section__cards-container {
+        width: 94%;
+        height: 88rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .for-section__card {
+            width: 100%;
+            height: 41.2rem;
+            margin: auto;
+            background-color: $blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            .for-section__card-info {
+                width: 90%;
+                margin: 1rem auto;
+                h2 {
+                    font-family: bitter-regular;
+                    font-size: 3.6rem;
+                    color: $white;
+                    margin: 1rem auto;
+                }
+                p {
+                    font-family: mw-regular;
+                    font-size: 1.8rem;
+                    color: $white;
+                    margin: 1rem auto;
+                }
+            }
+            .for-section__card-list {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                margin: 1rem auto;
+                .for-section__card-list__item {
+                    width: 100%;
+                    color: $white;
+                    font-size: 1.8rem;
+                    font-family: mw-regular;
+                    margin: 1rem auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    
+                    span {
+                        margin-left: 1rem;
+                    }
+                }   
+            }
+    
+        }
+    }
+}
+
+@media screen and (min-width:50rem) {
+    .for-section {
+        width: 94%;
+        
+        .for-section__cards-container {
+            width: 100%;
+            .for-section__card {
+                width: 64.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:70rem) {
+    .for-section {
+        width: 94%;
+        height: 46rem;
+        .for-section__cards-container {
+            width: 100%;
+            flex-direction: row;
+            .for-section__card {
+                width: 56.8rem;
+            }
+        }
+    }
+}

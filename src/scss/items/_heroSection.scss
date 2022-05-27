@@ -1,0 +1,307 @@
+@mixin card_header {
+    font-size: 1.4rem;
+    font-family: roboto;
+    display: block;
+    @include centerer;
+    width: 100%;
+    height: 2rem;
+}
+
+@mixin card_paragraph {
+    font-size: 1.4rem;
+    font-family: roboto;
+    display: block;
+    @include centerer;
+    width: 100%;
+    height: 4.8rem;
+}
+
+
+.hero-section {
+    width: 94%;
+    margin: 0 auto 0 auto;
+    background-color: $white;
+    @include centerer;
+    flex-direction: column;
+
+    .hero-section__banner {
+        width: clamp(100%, 300px, 30%);
+        height: 35.0rem;
+        max-height: 60rem;
+        background-color: $white;
+        margin: 0 auto 0 auto;
+        @include centerer;
+        position: relative;
+
+        img {
+            width: 90%;
+            max-height: 100%;
+            margin: auto;
+            object-fit: cover;
+        }
+
+        // start first  card (belgium flag)
+        .hero-section__first__card {
+            width: 9.61rem;
+            height: 12.4rem;
+            border-radius: .5rem;
+            position: absolute ;
+            top: -1rem;
+            left: 19rem;
+            transform: rotate(-16deg);
+            background-color:$white ;
+            @include centerer;
+            flex-direction: column;
+            box-shadow: 0 0 12px  $blue;
+            img {
+                width: 3.6rem;
+            }
+
+            h3{
+                @include card_header;
+            }
+
+            p {
+                @include card_paragraph;
+            }
+        }
+
+        // end 
+
+        // start second card
+        .hero-section__second__card {
+            width: 12.6rem;
+            height: 12.7rem;
+            background-color: $white;
+            position: absolute;
+            top: 12rem;
+            left: 4rem;
+            @include centerer;
+            flex-direction: column;
+            transform: rotate(11deg);
+            box-shadow: 0 0 12px  $blue;
+
+            img {
+                width: 3.7rem;
+            }
+
+            h3 {
+                @include card_header;
+            }
+
+            p {
+                @include card_paragraph;
+            }
+        }
+        // end second card
+
+        //  start third card
+        .hero-section__third__card {
+            width: 14.1rem;
+            height: 12.7rem;
+            background-color: $white;
+            position: absolute;
+            top: 18rem;
+            right: 4.2rem;
+            @include centerer;
+            flex-direction: column;
+            transform: rotate(-11deg);
+            box-shadow: 0 0 12px  $blue;
+
+            img {
+                width: 3.7rem;
+            }
+
+            h3 {
+                @include card_header;
+            }
+
+            p {
+                @include card_paragraph;
+            }
+        }
+        // end third card
+    }
+
+    // left side start
+
+    .hero-section__left__side {
+        width: 100%;
+        height: 50rem;
+        background-color: $white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 4rem;
+        h1 {
+            font-size: 3.6rem;
+            font-family: bitter-bold;
+            display: block;
+            width: 95%;
+            margin: auto;
+            line-height: 3.6rem;
+        }
+
+        p {
+            display: block;
+            width: 95%;
+            font-size: 1.8rem;
+            font-family: mw-regular;
+            margin: 1rem auto 0 auto;
+            height: 8.8rem;
+            line-height: 2.4rem;
+        }
+
+        .hero-section__left__side__buttons {
+            width: 100%;
+            height: 20rem;
+            margin-top: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .hero-section__left__side_link {
+                @include centerer;
+                width:  95%;
+                margin: auto;
+                height: 6.3rem;
+                background-color: $blue;
+                font-size: 1.8rem;
+                font-family: bitter-bold;
+                color: $white;
+                text-decoration: none;
+                border-radius: .4rem;
+    
+                span {
+                    font-weight: lighter;
+                    font-family: bitter-regular;
+                }
+    
+                &:hover {
+                    background-color: rgb(119, 119, 255);
+                }
+            }
+    
+            .hero-section__left__side_link__2 {
+                @include centerer;
+                width: 90%;
+                height: 6.3rem;
+                background-color: $white;
+                color: $silver;
+                text-decoration: none;
+                font-size: 1.8rem;
+    
+                .hero-section__left__side_link__2__icon {
+                    width: 3rem;
+                    justify-self: center;
+                    align-self: center;
+                }
+            }
+        }
+
+        .hero-section__left__side__reviews {
+            width: 90%;
+            height: 8rem;
+            @include centerer;
+            flex-direction: column;
+
+            .hero-section__left__side__reviews__stars {
+                width: 70%;
+                @include centerer;
+                height: 30%;
+            }
+
+            .hero-section__left__side__reviews_link {
+                width: 100%;
+                height: 70%;
+                @include centerer;  
+                a {
+                    font-size: 1.6rem;
+                    color: $silver;
+                    font-family: bitter-regular;
+                }
+            }
+            
+
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width:550px) {
+    .hero-section {
+        flex-flow: row-reverse wrap;
+        .hero-section__banner {
+            width: 100%;
+            img {
+                width: 50%;
+            }
+            .hero-section__first__card {
+                top: 1%;
+                left: 48%;
+            }
+            .hero-section__second__card {
+                top: 50%;
+                left: 15%;
+            }
+            .hero-section__third__card {
+                top: 66%;
+                right: 14%;
+            }
+        }
+    
+        .hero-section__left__side {
+            width: 100%;
+            flex-flow: row wrap ;
+            justify-content: start;
+            align-items: flex-start;
+
+            h1 {
+                font-size: 5.6rem;
+                line-height: 5.6rem;
+            }
+
+            .hero-section__left__side__buttons {
+                flex-direction: row;
+                justify-content: start;
+                height: 10rem;
+                .hero-section__left__side_link {
+                    width: 40% ; 
+                    margin: 0 0 0 2rem;
+                }
+                .hero-section__left__side_link__2  {
+                    width: 30% ;
+                }
+            }
+            .hero-section__left__side__reviews {
+                flex-direction: row;
+                justify-content: start;
+                width: 60%;
+            }
+            
+        }
+    }
+    
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .hero-section {
+        flex-direction: row-reverse;    
+        height: 60rem;
+        .hero-section__banner {
+            width: 40%;
+            
+        }
+        .hero-section__left__side {
+            width: 60%;
+        }
+    }
+}
+
+
+
