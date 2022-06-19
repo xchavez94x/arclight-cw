@@ -1,21 +1,3 @@
-@mixin card_header {
-    font-size: 1.4rem;
-    font-family: roboto;
-    display: block;
-    @include centerer;
-    width: 100%;
-    height: 2rem;
-}
-
-@mixin card_paragraph {
-    font-size: 1.4rem;
-    font-family: roboto;
-    display: block;
-    @include centerer;
-    width: 100%;
-    height: 4.8rem;
-}
-
 
 .hero-section {
     width: 94%;
@@ -37,7 +19,7 @@
             width: 90%;
             max-height: 100%;
             margin: auto;
-            object-fit: cover;
+            object-fit: fill;
         }
 
         // start first  card (belgium flag)
@@ -46,8 +28,8 @@
             height: 12.4rem;
             border-radius: .5rem;
             position: absolute ;
-            top: -1rem;
-            left: 19rem;
+            top: -4%;
+            left: 44%;
             transform: rotate(-16deg);
             background-color:$white ;
             @include centerer;
@@ -70,12 +52,12 @@
 
         // start second card
         .hero-section__second__card {
-            width: 12.6rem;
+            width: 11.6rem;
             height: 12.7rem;
             background-color: $white;
             position: absolute;
-            top: 12rem;
-            left: 4rem;
+            bottom: 10%;
+            left: 8%;
             @include centerer;
             flex-direction: column;
             transform: rotate(11deg);
@@ -97,12 +79,12 @@
 
         //  start third card
         .hero-section__third__card {
-            width: 14.1rem;
+            width: 12.1rem;
             height: 12.7rem;
             background-color: $white;
             position: absolute;
-            top: 18rem;
-            right: 4.2rem;
+            top: 63%;
+            right: 12.2%;
             @include centerer;
             flex-direction: column;
             transform: rotate(-11deg);
@@ -232,7 +214,7 @@
 
 
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:768px) {
     .hero-section {
         flex-flow: row-reverse wrap;
         .hero-section__banner {
@@ -247,11 +229,11 @@
             }
             .hero-section__second__card {
                 top: 50%;
-                left: 15%;
+                left: 28%;
             }
             .hero-section__third__card {
                 top: 66%;
-                right: 14%;
+                right: 29%;
             }
         }
     
@@ -282,6 +264,7 @@
                 flex-direction: row;
                 justify-content: start;
                 width: 70%;
+                margin-left: 3rem;
             }
             
         }
@@ -299,7 +282,20 @@
             width: 40%;
             img {
                 width: 100%;
-                height: 300px;
+                height: 100%;
+            }
+
+            .hero-section__first__card {
+                top: -8%;
+                left: 40%;
+            }
+            .hero-section__second__card {
+                top: 59%;
+                left: 8.3%;
+            }
+            .hero-section__third__card {
+                top: 70%;
+                right: 9%;
             }
         }
         .hero-section__left__side {

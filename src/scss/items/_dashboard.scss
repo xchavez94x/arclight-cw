@@ -2,27 +2,20 @@
 
 .dashboard-section {
     width: 94%;
-    height: 84rem;
+    height: 80rem;
     margin: auto;
     background-color: $blue;
-    @include centerer;
-    flex-direction: column;
+    @include centerer-column;
 
     .dashboard-section__info-container {
         width: 100%;
         height: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include lister;
         .dashboard-section__info {
             width: 90%;
             height:50%;
             margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            @include lister;
     
             h1 {
                 display: block;
@@ -39,7 +32,7 @@
                 font-family: mw-regular;
                 color: $white;
                 font-weight: lighter;
-                margin-bottom: 2rem;
+                margin: 2rem ;
             }
         }
 
@@ -50,16 +43,13 @@
     
             ul {
                 list-style-type: none;
-                // display: flex;
-                // flex-flow: column wrap;
-                // justify-content: space-evenly;
-                // align-items: flex-start;
+
                 width: 100%;
                 li {
                     font-size: 1.8rem;
                     font-family: mw-regular;
                     color: $white;
-                    width: 100%;
+                    width: 78%;
                     height: 7rem;
                     display: flex;
                     flex-direction: row;
@@ -84,30 +74,53 @@
         align-items: center;
         img {
             width: 90%;
-            height: 80%;
+            height: 90%;
         }
     }
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     .dashboard-section {
+        .dashboard-section__info-container {
+            width: 100%;
+            .dashboard-section__info {
+                flex-flow: row wrap; 
+                justify-content: flex-start;
+                height: 40%;
+                h1 {
+                    width: 90%;
+                }
+
+                
+            }
+            .dashboard-section__list {
+                    ul {
+                        li {
+                            height: 5rem;
+                        }
+                    }
+                }
+        }  
+        
         .dashboard-section__image {
             justify-content: flex-end;
             align-items: flex-start;
             width: 94%;
+            height: 50%;
             img {
-                width: 68%;
+                width: 50%;
                 height: 84%;
+                margin-left: 2.7rem;
             }
         }
     }
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 1240px) {
     .dashboard-section {
         flex-flow: row-reverse wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-end;
         height: 40rem;
         width: 90%;
@@ -124,13 +137,14 @@
             }
         }
         .dashboard-section__image {
-            width: 31rem;
+            width: 40%;
             height: 100%;
             align-items: flex-end;
             justify-content: flex-end;
             img {
-                width: 100%;
+                width: 90%;
                 height: 75%;
+                margin-right: 5rem;
             }
         }
     }

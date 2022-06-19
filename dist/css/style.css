@@ -55,12 +55,12 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1240px) {
   .navbar {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .navbar .navbar__logo {
-    width: 12rem;
+    width: 29rem;
   }
   .navbar .navbar__burger_menu {
     display: none;
@@ -89,16 +89,18 @@ html {
   }
   .navbar .navbar__menu .navbar__menu__button {
     width: 24%;
-    height: 100%;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 20rem;
     justify-self: end;
+    background-color: #242DFE;
+    border-radius: 0.4rem;
   }
   .navbar .navbar__menu .navbar__menu__button a {
-    color: #595959;
-    font-size: 1.8rem;
+    color: #ffffff;
+    font-size: 1.6rem;
     text-decoration: none;
     font-family: mw-regular;
   }
@@ -127,15 +129,15 @@ html {
   width: 90%;
   max-height: 100%;
   margin: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 .hero-section .hero-section__banner .hero-section__first__card {
   width: 9.61rem;
   height: 12.4rem;
   border-radius: 0.5rem;
   position: absolute;
-  top: -1rem;
-  left: 19rem;
+  top: -4%;
+  left: 44%;
   transform: rotate(-16deg);
   background-color: #ffffff;
   display: flex;
@@ -168,12 +170,12 @@ html {
   height: 4.8rem;
 }
 .hero-section .hero-section__banner .hero-section__second__card {
-  width: 12.6rem;
+  width: 11.6rem;
   height: 12.7rem;
   background-color: #ffffff;
   position: absolute;
-  top: 12rem;
-  left: 4rem;
+  bottom: 10%;
+  left: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,12 +207,12 @@ html {
   height: 4.8rem;
 }
 .hero-section .hero-section__banner .hero-section__third__card {
-  width: 14.1rem;
+  width: 12.1rem;
   height: 12.7rem;
   background-color: #ffffff;
   position: absolute;
-  top: 18rem;
-  right: 4.2rem;
+  top: 63%;
+  right: 12.2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,7 +345,7 @@ html {
   font-family: bitter-regular;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     flex-flow: row-reverse wrap;
   }
@@ -360,11 +362,11 @@ html {
   }
   .hero-section .hero-section__banner .hero-section__second__card {
     top: 50%;
-    left: 15%;
+    left: 28%;
   }
   .hero-section .hero-section__banner .hero-section__third__card {
     top: 66%;
-    right: 14%;
+    right: 29%;
   }
   .hero-section .hero-section__left__side {
     width: 100%;
@@ -392,6 +394,7 @@ html {
     flex-direction: row;
     justify-content: start;
     width: 70%;
+    margin-left: 3rem;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -405,7 +408,19 @@ html {
   }
   .hero-section .hero-section__banner img {
     width: 100%;
-    height: 300px;
+    height: 100%;
+  }
+  .hero-section .hero-section__banner .hero-section__first__card {
+    top: -8%;
+    left: 40%;
+  }
+  .hero-section .hero-section__banner .hero-section__second__card {
+    top: 59%;
+    left: 8.3%;
+  }
+  .hero-section .hero-section__banner .hero-section__third__card {
+    top: 70%;
+    right: 9%;
   }
   .hero-section .hero-section__left__side {
     width: 50%;
@@ -453,13 +468,13 @@ html {
 }
 .dashboard-section {
   width: 94%;
-  height: 84rem;
+  height: 80rem;
   margin: auto;
   background-color: #242DFE;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .dashboard-section .dashboard-section__info-container {
   width: 100%;
@@ -492,7 +507,7 @@ html {
   font-family: mw-regular;
   color: #ffffff;
   font-weight: lighter;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 .dashboard-section .dashboard-section__info-container .dashboard-section__list {
   width: 90%;
@@ -509,7 +524,7 @@ html {
   font-size: 1.8rem;
   font-family: mw-regular;
   color: #ffffff;
-  width: 100%;
+  width: 78%;
   height: 7rem;
   display: flex;
   flex-direction: row;
@@ -530,24 +545,40 @@ html {
 }
 .dashboard-section .dashboard-section__image img {
   width: 90%;
-  height: 80%;
+  height: 90%;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
+  .dashboard-section .dashboard-section__info-container {
+    width: 100%;
+  }
+  .dashboard-section .dashboard-section__info-container .dashboard-section__info {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 40%;
+  }
+  .dashboard-section .dashboard-section__info-container .dashboard-section__info h1 {
+    width: 90%;
+  }
+  .dashboard-section .dashboard-section__info-container .dashboard-section__list ul li {
+    height: 5rem;
+  }
   .dashboard-section .dashboard-section__image {
     justify-content: flex-end;
     align-items: flex-start;
     width: 94%;
+    height: 50%;
   }
   .dashboard-section .dashboard-section__image img {
-    width: 68%;
+    width: 50%;
     height: 84%;
+    margin-left: 2.7rem;
   }
 }
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 1240px) {
   .dashboard-section {
     flex-flow: row-reverse wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
     height: 40rem;
     width: 90%;
@@ -565,14 +596,15 @@ html {
     height: 40%;
   }
   .dashboard-section .dashboard-section__image {
-    width: 31rem;
+    width: 40%;
     height: 100%;
     align-items: flex-end;
     justify-content: flex-end;
   }
   .dashboard-section .dashboard-section__image img {
-    width: 100%;
+    width: 90%;
     height: 75%;
+    margin-right: 5rem;
   }
 }
 .for-section {
@@ -734,7 +766,7 @@ html {
   align-items: center;
   font-family: bitter-bold;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 1.2rem auto;
   border-radius: 0.5rem;
   background-color: #ffffff;
   color: #242DFE;
@@ -804,7 +836,7 @@ html {
   align-items: center;
   font-family: bitter-bold;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 1.2rem auto;
   border-radius: 0.5rem;
   background-color: #242DFE;
   color: #ffffff;
@@ -838,8 +870,122 @@ html {
   width: 100%;
   height: 80rem;
   background-color: #242DFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .inner {
+  width: 90%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .inner .info {
+  width: 100%;
+  height: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer .inner .info__logo {
+  width: 20%;
+  height: 5rem;
+}
+.footer .inner .info__desc {
+  margin-top: 2rem;
+  display: block;
+  width: 94%;
+  height: 6rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.footer .inner .lists {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.footer .inner .lists__list-container {
+  width: 40%;
+  height: 13rem;
+  color: white;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.footer .inner .lists__list-container h4 {
+  font-size: 2rem;
+  font-family: bitter-bold;
+}
+.footer .inner .lists__list-container ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+.footer .inner .lists__list-container ul li {
+  font-size: 1.6rem;
+  height: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 40rem;
+  }
+  .footer .inner {
+    width: 84%;
+    height: 33rem;
+    justify-content: start;
+  }
+  .footer .inner .info__logo {
+    width: 100%;
+    height: 3rem;
+  }
+  .footer .inner .info__desc {
+    width: 70%;
+  }
+  .footer .inner .lists {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer .inner .lists__list-container {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .footer {
+    height: 30rem;
+  }
+  .footer .inner {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer .inner .info {
+    width: 30%;
+    justify-content: start;
+  }
+  .footer .inner .info__logo {
+    width: 100%;
+  }
+  .footer .inner .info__desc {
+    width: 100%;
+  }
+  .footer .inner .lists {
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+  }
+  .footer .inner .lists__list-container {
+    width: 20%;
+  }
+}
 .container {
   width: 100%;
   max-width: 144rem;
