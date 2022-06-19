@@ -16,6 +16,8 @@
         @include cardStyle;
 
         .prices-section__price-card__info__blue {
+            width: 88%;
+            margin: auto;
             h3 {
                 color: $white;
                 @include thirdHeaderStyle;
@@ -122,6 +124,12 @@
         .prices-section__price-card__blue {
             width: 90%;
             order: 2;
+
+            .prices-section__price-card__info__blue  {
+                width: 90%;
+                height: 10rem;
+                margin: auto;
+            }
         }
     }
 }

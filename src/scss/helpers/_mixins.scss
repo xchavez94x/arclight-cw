@@ -55,8 +55,8 @@
 }
 
 @mixin cardStyle {
-    width: 80%; 
-    height: 44rem;
+    width: 89%; 
+    height: 46rem;
     margin: 2rem auto;
     padding: 1rem 2rem;
     display: flex;
@@ -80,7 +80,7 @@
 }
 
 @mixin SubscribeButtonStyle {
-    width: 28.1rem;
+    width: 90%;
     height: 5.2rem;
     font-size: 1.8rem;
     @include centerer;

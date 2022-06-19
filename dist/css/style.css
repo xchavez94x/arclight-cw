@@ -705,14 +705,18 @@ html {
 .prices-section .prices-section__price-card__blue {
   background-color: #242DFE;
   border-radius: 12px;
-  width: 80%;
-  height: 44rem;
+  width: 89%;
+  height: 46rem;
   margin: 2rem auto;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+.prices-section .prices-section__price-card__blue .prices-section__price-card__info__blue {
+  width: 88%;
+  margin: auto;
 }
 .prices-section .prices-section__price-card__blue .prices-section__price-card__info__blue h3 {
   color: #ffffff;
@@ -757,7 +761,7 @@ html {
   color: #ffffff;
 }
 .prices-section .prices-section__price-card__blue .prices-section__blue-button {
-  width: 28.1rem;
+  width: 90%;
   height: 5.2rem;
   font-size: 1.8rem;
   display: flex;
@@ -771,8 +775,8 @@ html {
   color: #242DFE;
 }
 .prices-section .prices-section__price-card {
-  width: 80%;
-  height: 44rem;
+  width: 89%;
+  height: 46rem;
   margin: 2rem auto;
   padding: 1rem 2rem;
   display: flex;
@@ -827,7 +831,7 @@ html {
   margin-left: 1rem;
 }
 .prices-section .prices-section__price-card .prices-section__button {
-  width: 28.1rem;
+  width: 90%;
   height: 5.2rem;
   font-size: 1.8rem;
   display: flex;
@@ -851,6 +855,11 @@ html {
   .prices-section .prices-section__price-card__blue {
     width: 90%;
     order: 2;
+  }
+  .prices-section .prices-section__price-card__blue .prices-section__price-card__info__blue {
+    width: 90%;
+    height: 10rem;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1240px) {
@@ -908,7 +917,7 @@ html {
   justify-content: start;
 }
 .footer .inner .lists__list-container {
-  width: 40%;
+  width: 90%;
   height: 13rem;
   color: white;
   margin-top: 3rem;
