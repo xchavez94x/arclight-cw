@@ -37,4 +37,4 @@ gulp.task('watch', async () => {
     await gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], gulp.series('run_sass'));
     await gulp.watch('src/html/*.html', gulp.series('run_html'));
     await gulp.watch('src/js/*.js', gulp.series('run_js'));
-})
+});

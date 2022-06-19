@@ -28,9 +28,9 @@
 
 @media screen and  (min-width: 1000px) {
     .navbar {
-        justify-content: space-between;
+        justify-content: space-around;
         .navbar__logo {
-            width: 20rem;
+            width: 12rem;
         }
         .navbar__burger_menu {
             display: none;
@@ -43,7 +43,7 @@
             width: 63%;
             height: 100%;
             .navbar__menu__links {
-                width: 40%;
+                width: 44%;
                 height: 100%;
                 @include centerer;
                 justify-content: space-around;
@@ -57,7 +57,7 @@
                 
             }
             .navbar__menu__button {
-                width: 20%;
+                width: 24%;
                 height: 100%;
                 @include centerer;
                 margin-left: 20rem;

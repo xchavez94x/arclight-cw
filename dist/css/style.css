@@ -57,10 +57,10 @@ html {
 
 @media screen and (min-width: 1000px) {
   .navbar {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .navbar .navbar__logo {
-    width: 20rem;
+    width: 12rem;
   }
   .navbar .navbar__burger_menu {
     display: none;
@@ -73,7 +73,7 @@ html {
     height: 100%;
   }
   .navbar .navbar__menu .navbar__menu__links {
-    width: 40%;
+    width: 44%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -88,7 +88,7 @@ html {
     font-family: mw-regular;
   }
   .navbar .navbar__menu .navbar__menu__button {
-    width: 20%;
+    width: 24%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -343,7 +343,7 @@ html {
   font-family: bitter-regular;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 480px) {
   .hero-section {
     flex-flow: row-reverse wrap;
   }
@@ -351,7 +351,8 @@ html {
     width: 100%;
   }
   .hero-section .hero-section__banner img {
-    width: 50%;
+    object-fit: fill;
+    width: 80%;
   }
   .hero-section .hero-section__banner .hero-section__first__card {
     top: 1%;
@@ -390,19 +391,33 @@ html {
   .hero-section .hero-section__left__side .hero-section__left__side__reviews {
     flex-direction: row;
     justify-content: start;
-    width: 60%;
+    width: 70%;
   }
 }
 @media screen and (min-width: 1000px) {
   .hero-section {
     flex-direction: row-reverse;
+    justify-content: space-between;
     height: 60rem;
   }
   .hero-section .hero-section__banner {
     width: 40%;
   }
+  .hero-section .hero-section__banner img {
+    width: 100%;
+    height: 300px;
+  }
   .hero-section .hero-section__left__side {
-    width: 60%;
+    width: 50%;
+  }
+  .hero-section .hero-section__left__side h1 {
+    width: 84%;
+  }
+  .hero-section .hero-section__left__side p {
+    width: 84%;
+  }
+  .hero-section .hero-section__left__side .hero-section__left__side__buttons {
+    padding-left: 3rem;
   }
 }
 .logos-container {
@@ -425,7 +440,7 @@ html {
 
 @media screen and (min-width: 33.3rem) {
   .logos-container {
-    height: 38rem;
+    height: 33rem;
   }
   .logos-container .logos-container__inner {
     width: 80%;
@@ -434,9 +449,6 @@ html {
 @media screen and (min-width: 50rem) {
   .logos-container {
     height: 20rem;
-  }
-  .logos-container .logos-container__inner {
-    width: 80%;
   }
 }
 .dashboard-section {
@@ -508,27 +520,28 @@ html {
   margin-left: 1rem;
 }
 .dashboard-section .dashboard-section__image {
-  width: 90%;
+  width: 94%;
   height: 40%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: flex-end;
+  align-items: center;
 }
 .dashboard-section .dashboard-section__image img {
-  width: 100%;
+  width: 90%;
   height: 80%;
 }
 
-@media screen and (min-width: 36.6rem) {
+@media screen and (min-width: 500px) {
   .dashboard-section .dashboard-section__image {
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
+    width: 94%;
   }
   .dashboard-section .dashboard-section__image img {
-    width: 80%;
-    height: 80%;
+    width: 68%;
+    height: 84%;
   }
 }
 @media screen and (min-width: 50rem) {
@@ -552,14 +565,14 @@ html {
     height: 40%;
   }
   .dashboard-section .dashboard-section__image {
-    width: 40%;
+    width: 31rem;
     height: 100%;
     align-items: flex-end;
     justify-content: flex-end;
   }
   .dashboard-section .dashboard-section__image img {
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 75%;
   }
 }
 .for-section {
@@ -639,14 +652,14 @@ html {
 @media screen and (min-width: 70rem) {
   .for-section {
     width: 94%;
-    height: 46rem;
+    height: 50rem;
   }
   .for-section .for-section__cards-container {
     width: 100%;
     flex-direction: row;
   }
   .for-section .for-section__cards-container .for-section__card {
-    width: 56.8rem;
+    width: 51.8rem;
   }
 }
 .prices-section {
@@ -797,7 +810,7 @@ html {
   color: #ffffff;
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 768px) {
   .prices-section {
     flex-flow: row wrap;
   }
@@ -809,7 +822,7 @@ html {
     order: 2;
   }
 }
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 1240px) {
   .prices-section {
     flex-flow: row wrap;
   }
@@ -821,6 +834,12 @@ html {
     order: 0;
   }
 }
+.footer {
+  width: 100%;
+  height: 80rem;
+  background-color: #242DFE;
+}
+
 .container {
   width: 100%;
   max-width: 144rem;

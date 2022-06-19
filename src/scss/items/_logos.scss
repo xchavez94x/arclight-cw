@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 33.3rem) {
     .logos-container {
-        height: 38rem;
+        height: 33rem;
         .logos-container__inner {
             width: 80%;
         }
@@ -28,9 +28,9 @@
 @media screen and (min-width: 50rem) {
     .logos-container {
         height: 20rem;
-        .logos-container__inner {
-            width: 80%;
-        }
+        // .logos-container__inner {
+        //     width: 80%;
+        // }
     }
 }
 
